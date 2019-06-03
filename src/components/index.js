@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import './css/Pagination.css';
+import './css/Pagination.css'
 import SildeShow from './SildeShow';
-import ListMobile from '../components/MobileList/ListOfMobile'
+import ListMobile from './MobileList/ListOfMobile'
 import ListLaptop from './LaptopList/LaptopList'
 
 
@@ -27,7 +27,7 @@ import ListLaptop from './LaptopList/LaptopList'
     function ShowListMobile(){
         return (
             <div>
-                {/* <ListMobile /> */}
+                <ListMobile />
                 
             </div>
         )
@@ -35,7 +35,7 @@ import ListLaptop from './LaptopList/LaptopList'
     function ShowListLaptop(){
         return (
             <div>
-                {/* <ListLaptop /> */}
+                <ListLaptop />
 
             </div>
         )
@@ -71,7 +71,7 @@ function Menu (){
                                 <Link to="/mobile/">Danh Sach Dien thoai</Link>
                             </li>
                             <li>
-                                <Link to="/mobile/">Danh Sach Laptop</Link>
+                                <Link to="/laptop/">Danh Sach Laptop</Link>
                             </li>
                             <li>
                                 <Link to="/list/">Danh Sach San Pham</Link>
@@ -85,13 +85,13 @@ function Menu (){
                     <Route path="/" exact component={DefaultApp} />
                     <Route path="/list/" component={ListByType} />
                     {/* <Route path="/order/" component={Order} /> */}
-                    <Route path="/mobile/" component={ListMobile} />
-                    <Route path="/laptop/" component={ListLaptop} />
+                    <Route path="/mobile/" component={ShowListMobile} />
+                    <Route path="/laptop/" component={ShowListLaptop} />
                     
                 </div>
                 </Router>
           
-          }
+          
 
         </div>
     )

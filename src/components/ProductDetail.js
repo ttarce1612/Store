@@ -6,29 +6,14 @@ class ProductDetail extends React.Component {
         this.state = {
             data: props.data || [],
         }
-        // this.buildBody = this.buildBody.bind(this);
     }
 
-    // buildBody() {
-    //     let data2 = [
-    //         {
-    //             picture : 'pd1.png',
-    //             name : 'mobile',
-    //             brand : 'samsung',
-    //             model: "Galaxy S10 5G",
-    //             price : '15000',
-    //             color: "yellow"
-    //         }
-
-    //     ]
-    //     this.state.data = data2;
-    // }
     render() {
         return (
             <div className="product-detail">
                 <div id="row1">
                     <span id='picture'>
-                    <img scr={"images/" +this.state.data.picture} alt= ""/>    
+                        {this.state.data.picture}
                     </span>
                     <span> &nbsp; </span>
                 </div>
