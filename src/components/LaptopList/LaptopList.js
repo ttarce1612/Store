@@ -1,11 +1,11 @@
 import React from 'react';
-import ProductDetail from '../ProductDetail'
+import ProductDetail from '../ProducDetail/ProductDetail'
 
 function LaptopList() {
     
     let data2 = [
         {
-            picture: 'lt1.png',
+            picture: 'lt1.jpeg',
             name: 'laptop',
             brand: 'apple',
             model: "macbookpro",
@@ -13,7 +13,7 @@ function LaptopList() {
             color: "yellow"
         },
         {
-            picture: 'lt2.png',
+            picture: 'lt2.jpeg',
             name: 'laptop',
             brand: 'samsung',
             model: "Galaxy S10 5G",
@@ -21,7 +21,7 @@ function LaptopList() {
             color: "yellow"
         },
         {
-            picture: 'lt3.png',
+            picture: 'lt3.jpb',
             name: 'laptop',
             brand: 'asus',
             model: "Galaxy S10 5G",
@@ -29,7 +29,7 @@ function LaptopList() {
             color: "yellow"
         },
         {
-            picture: 'lt4.png',
+            picture: 'lt4.jpeg',
             name: 'laptop',
             brand: 'dell',
             model: "Galaxy S10 5G",
@@ -37,7 +37,7 @@ function LaptopList() {
             color: "yellow"
         },
         {
-            picture: 'lt5.png',
+            picture: 'lt5.jpeg',
             name: 'laptop',
             brand: 'vaio',
             model: "Galaxy S10 5G",
@@ -45,7 +45,7 @@ function LaptopList() {
             color: "yellow"
         },
         {
-            picture: 'lt6.png',
+            picture: 'lt6.jpeg',
             name: 'laptop',
             brand: 'hp',
             model: "Galaxy S10 5G",
@@ -53,7 +53,7 @@ function LaptopList() {
             color: "yellow"
         },
         {
-            picture: 'lt7.png',
+            picture: 'lt7.jpeg',
             name: 'laptop',
             brand: 'samsung',
             model: "Galaxy S10 5G",

@@ -1,11 +1,31 @@
 import React from 'react';
-import ProductDetail from '../ProductDetail'
+import ProductDetail from '../ProducDetail/ProductDetail'
 
+
+function  Pagination() {
+        let items = [];
+        let active = 2;
+        for (let number = 1; number <=9 ; number++) {
+            items.push(
+                <Pagination.Item key={number} active={number === active}>
+                    {number}
+                </Pagination.Item>,
+            );
+        }
+
+        const paginationBasic = (
+            <div>
+                <Pagination>{items}</Pagination>
+                <br />
+            </div>
+        )
+        return paginationBasic;
+    }
 function buildMobileList() {
     
     let data2 = [
         {
-            picture: 'pd1.png',
+            picture: 'pd1.jpeg',
             name: 'mobile',
             brand: 'samsung',
             model: "Galaxy S10 5G",
@@ -13,7 +33,7 @@ function buildMobileList() {
             color: "yellow"
         },
         {
-            picture: 'pd2.png',
+            picture: 'pd2.jpeg',
             name: 'mobile',
             brand: 'samsung',
             model: "Galaxy S10 5G",
@@ -21,7 +41,7 @@ function buildMobileList() {
             color: "yellow"
         },
         {
-            picture: 'pd3.png',
+            picture: 'pd3.jpeg',
             name: 'mobile',
             brand: 'samsung',
             model: "Galaxy S10 5G",
@@ -29,7 +49,7 @@ function buildMobileList() {
             color: "yellow"
         },
         {
-            picture: 'pd4.png',
+            picture: 'pd4.jpeg',
             name: 'mobile',
             brand: 'samsung',
             model: "Galaxy S10 5G",
@@ -37,7 +57,7 @@ function buildMobileList() {
             color: "yellow"
         },
         {
-            picture: 'pd5.png',
+            picture: 'pd5.jpeg',
             name: 'mobile',
             brand: 'samsung',
             model: "Galaxy S10 5G",
@@ -45,7 +65,7 @@ function buildMobileList() {
             color: "yellow"
         },
         {
-            picture: 'pd6.png',
+            picture: 'pd6.jpeg',
             name: 'mobile',
             brand: 'samsung',
             model: "Galaxy S10 5G",
@@ -53,7 +73,7 @@ function buildMobileList() {
             color: "yellow"
         },
         {
-            picture: 'pd7.png',
+            picture: 'pd7.jpeg',
             name: 'mobile',
             brand: 'samsung',
             model: "Galaxy S10 5G",
